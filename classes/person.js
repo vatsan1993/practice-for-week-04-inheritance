@@ -11,13 +11,13 @@ class Person {
 
   static introducePeople(people) {
     if (!Array.isArray(people)) {
-      throw new Error("introducePeople only takes an array as an argument.");
+      throw new Error('introducePeople only takes an array as an argument.');
       return;
     }
 
     for (let person of people) {
       if (!(person instanceof Person)) {
-        throw new Error("All items in array must be Person class instances.");
+        throw new Error('All items in array must be Person class instances.');
         return;
       }
     }
